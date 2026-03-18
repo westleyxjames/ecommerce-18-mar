@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - LUXE MODAL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="mainHeader">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+                        <rect x="8" y="8" width="24" height="24" stroke="currentColor" stroke-width="1.5" rx="2"/>
+                        <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="20" y1="8" x2="20" y2="14" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="20" y1="26" x2="20" y2="32" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="8" y1="20" x2="14" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="26" y1="20" x2="32" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>LUXE MODAL</span>
+                </a>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="shop.html" class="nav-link">Shop</a>
+                    <a href="blog.html" class="nav-link">Journal</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="header-icon" id="cartToggle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+                        </svg>
+                        <span class="cart-badge" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Secure Checkout</h1>
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: var(--sage-green); color: var(--white); border-radius: 50px; font-size: 0.875rem; font-weight: 600;">
+                    <span>1</span> Shipping
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: var(--gray-300); color: var(--gray-600); border-radius: 50px; font-size: 0.875rem; font-weight: 600;">
+                    <span>2</span> Payment
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: var(--gray-300); color: var(--gray-600); border-radius: 50px; font-size: 0.875rem; font-weight: 600;">
+                    <span>3</span> Confirmation
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="section">
+        <div class="container" style="max-width: 1200px;">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 3rem;">
+                <!-- Checkout Form -->
+                <div style="grid-column: 1;">
+                    <form id="checkoutForm">
+                        <!-- Contact Information -->
+                        <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: var(--shadow);">
+                            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--deep-brown);">Contact Information</h2>
+                            <div style="display: grid; gap: 1.5rem;">
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                                    <div>
+                                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">First Name *</label>
+                                        <input type="text" id="firstName" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                                    </div>
+                                    <div>
+                                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Last Name *</label>
+                                        <input type="text" id="lastName" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Email Address *</label>
+                                    <input type="email" id="email" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                                </div>
+                                <div>
+                                    <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Phone Number *</label>
+                                    <input type="tel" id="phone" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Address -->
+                        <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: var(--shadow);">
+                            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--deep-brown);">Shipping Address</h2>
+                            <div style="display: grid; gap: 1.5rem;">
+                                <div>
+                                    <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Street Address *</label>
+                                    <input type="text" id="address" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                                </div>
+                                <div>
+                                    <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">Apartment, Suite, etc. (Optional)</label>
+                                    <input type="text" id="address2" style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                                </div>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+                                    <div>
+                                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">City *</label>
+                                        <input type="text" id="city" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                                    </div>
+                                    <div>
+                                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">State *</label>
+                                        <select id="state" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                                            <option value="">Select State</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="NY">New York</option>
+                                            <option value="CA">California</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="FL">Florida</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--deep-brown);">ZIP Code *</label>
+                                        <input type="text" id="zip" required style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: var(--shadow);">
+                            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--deep-brown);">Payment Method</h2>
+                            <div style="display: grid; gap: 1rem;">
+                                <label style="display: flex; align-items: center; gap: 1rem; padding: 1.5rem; border: 2px solid var(--sage-green); background: rgba(139, 157, 131, 0.05); border-radius: var(--border-radius); cursor: pointer;">
+                                    <input type="radio" name="payment" value="cod" checked style="width: 20px; height: 20px;">
+                                    <div>
+                                        <div style="font-weight: 600; color: var(--deep-brown); margin-bottom: 0.25rem;">Cash on Delivery (COD)</div>
+                                        <div style="font-size: 0.875rem; color: var(--gray-600);">Pay with cash when your order arrives</div>
+                                    </div>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 1rem; padding: 1.5rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); cursor: pointer; opacity: 0.5;">
+                                    <input type="radio" name="payment" value="card" disabled style="width: 20px; height: 20px;">
+                                    <div>
+                                        <div style="font-weight: 600; color: var(--deep-brown); margin-bottom: 0.25rem;">Credit/Debit Card (Coming Soon)</div>
+                                        <div style="font-size: 0.875rem; color: var(--gray-600);">Visa, Mastercard, Amex</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Order Notes -->
+                        <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: var(--shadow);">
+                            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--deep-brown);">Order Notes (Optional)</h2>
+                            <textarea id="orderNotes" rows="4" placeholder="Special delivery instructions..." style="width: 100%; padding: 0.875rem; border: 2px solid var(--gray-200); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem; resize: vertical;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" style="padding: 1.25rem; font-size: 1.125rem;">Complete Order with COD</button>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div style="grid-column: 1;">
+                    <div style="position: sticky; top: 100px; background: var(--white); padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--deep-brown);">Order Summary</h3>
+                        <div id="checkoutItems" style="max-height: 300px; overflow-y: auto; margin-bottom: 1.5rem;"></div>
+                        <div style="border-top: 2px solid var(--gray-200); padding-top: 1.5rem;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; color: var(--gray-700);">
+                                <span>Subtotal:</span>
+                                <span id="checkoutSubtotal">$0.00</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; color: var(--gray-700);">
+                                <span>Shipping:</span>
+                                <span id="checkoutShipping">$0.00</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem; color: var(--gray-700);">
+                                <span>Tax:</span>
+                                <span id="checkoutTax">$0.00</span>
+                            </div>
+                            <div style="border-top: 2px solid var(--gray-200); padding-top: 1rem; margin-top: 1rem; display: flex; justify-content: space-between; font-size: 1.5rem; font-weight: 600; color: var(--deep-brown);">
+                                <span>Total:</span>
+                                <span id="checkoutTotal">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 LUXE MODAL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products-data.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function renderCheckoutSummary() {
+            const cart = getCart();
+            if (cart.length === 0) {
+                window.location.href = 'cart.html';
+                return;
+            }
+
+            const container = document.getElementById('checkoutItems');
+            let subtotal = 0;
+
+            container.innerHTML = cart.map(item => {
+                const product = allProducts.find(p => p.id === item.productId);
+                const itemTotal = product.price * item.quantity;
+                subtotal += itemTotal;
+
+                return `
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--gray-200);">
+                        <img src="${product.image}" alt="${product.name}" style="width: 60px; height: 75px; object-fit: cover; border-radius: var(--border-radius);">
+                        <div style="flex: 1;">
+                            <h4 style="font-size: 0.875rem; margin-bottom: 0.25rem; color: var(--deep-brown);">${product.name}</h4>
+                            <p style="font-size: 0.75rem; color: var(--gray-600);">Qty: ${item.quantity}</p>
+                            ${item.size ? `<p style="font-size: 0.75rem; color: var(--gray-600);">Size: ${item.size}</p>` : ''}
+                        </div>
+                        <div style="text-align: right;">
+                            <p style="font-weight: 600; color: var(--deep-brown);">$${itemTotal.toFixed(2)}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            const shipping = subtotal >= 150 ? 0 : 10;
+            const tax = subtotal * 0.0625;
+            const total = subtotal + shipping + tax;
+
+            document.getElementById('checkoutSubtotal').textContent = `$${subtotal.toFixed(2)}`;
+            document.getElementById('checkoutShipping').textContent = shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`;
+            document.getElementById('checkoutTax').textContent = `$${tax.toFixed(2)}`;
+            document.getElementById('checkoutTotal').textContent = `$${total.toFixed(2)}`;
+
+            localStorage.setItem('orderTotal', total.toFixed(2));
+        }
+
+        document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const orderData = {
+                customer: {
+                    firstName: document.getElementById('firstName').value,
+                    lastName: document.getElementById('lastName').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value
+                },
+                shipping: {
+                    address: document.getElementById('address').value,
+                    address2: document.getElementById('address2').value,
+                    city: document.getElementById('city').value,
+                    state: document.getElementById('state').value,
+                    zip: document.getElementById('zip').value
+                },
+                notes: document.getElementById('orderNotes').value,
+                cart: getCart(),
+                total: localStorage.getItem('orderTotal'),
+                orderNumber: 'LXM' + Date.now(),
+                date: new Date().toLocaleDateString()
+            };
+
+            localStorage.setItem('lastOrder', JSON.stringify(orderData));
+            localStorage.removeItem('cart');
+            window.location.href = 'checkout-confirmation.html';
+        });
+
+        renderCheckoutSummary();
+    </script>
+
+    <style>
+        .page-header {
+            padding-top: 120px;
+            padding-bottom: 3rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+        }
+        @media (min-width: 1024px) {
+            section .container > div {
+                grid-template-columns: 2fr 1fr !important;
+            }
+        }
+        @media (max-width: 768px) {
+            div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+            div[style*="grid-template-columns: 1fr 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+</html>

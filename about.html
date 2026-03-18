@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LUXE MODAL Sustainable Fashion</title>
+    <meta name="description" content="Learn about LUXE MODAL's commitment to sustainable, ethical fashion. Our story, values, and mission.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="mainHeader">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+                        <rect x="8" y="8" width="24" height="24" stroke="currentColor" stroke-width="1.5" rx="2"/>
+                        <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="20" y1="8" x2="20" y2="14" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="20" y1="26" x2="20" y2="32" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="8" y1="20" x2="14" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="26" y1="20" x2="32" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>LUXE MODAL</span>
+                </a>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="shop.html" class="nav-link">Shop</a>
+                    <a href="blog.html" class="nav-link">Journal</a>
+                    <a href="about.html" class="nav-link active">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="header-icon" id="searchToggle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                    </button>
+                    <button class="header-icon" id="cartToggle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+                        </svg>
+                        <span class="cart-badge" id="cartCount">0</span>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span>MENU</span>
+            <button class="mobile-menu-close" id="closeMobileMenu">×</button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Journal</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Story</h1>
+            <p>Sustainable luxury fashion that honors people and planet</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="section">
+        <div class="container" style="max-width: 1000px;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=1200&q=80" alt="About LUXE MODAL" style="width: 100%; height: 500px; object-fit: cover; border-radius: var(--border-radius-lg); margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--deep-brown);">Fashion with Purpose</h2>
+                <p style="font-size: 1.25rem; color: var(--gray-600); line-height: 1.8; max-width: 800px; margin: 0 auto;">LUXE MODAL was founded on the belief that fashion should never come at the cost of our planet or the people who make it. We create premium, sustainable clothing that combines timeless design with ethical production.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; margin-bottom: 4rem;">
+                <div style="background: var(--cream); padding: 3rem; border-radius: var(--border-radius-lg);">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--deep-brown);">Our Mission</h3>
+                    <p style="font-size: 1.125rem; color: var(--gray-700); line-height: 1.8;">To revolutionize the fashion industry by proving that luxury and sustainability can coexist. We're committed to creating beautiful, high-quality garments using only organic and recycled materials, produced in fair-trade certified facilities with living wages and safe working conditions.</p>
+                </div>
+            </div>
+
+            <div id="sustainability"></div>
+            <div style="margin-bottom: 4rem;">
+                <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--deep-brown);">Our Values</h2>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+                    <div style="display: flex; gap: 2rem; align-items: flex-start; padding: 2rem; background: var(--white); border-radius: var(--border-radius-lg); box-shadow: var(--shadow);">
+                        <div style="flex-shrink: 0; width: 60px; height: 60px; background: linear-gradient(135deg, var(--sage-green) 0%, var(--sage-dark) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white);">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--deep-brown);">Sustainability First</h3>
+                            <p style="color: var(--gray-600); line-height: 1.7;">Every decision we make considers environmental impact. From GOTS-certified organic cotton to carbon-neutral shipping, sustainability is woven into our DNA.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 2rem; align-items: flex-start; padding: 2rem; background: var(--white); border-radius: var(--border-radius-lg); box-shadow: var(--shadow);">
+                        <div style="flex-shrink: 0; width: 60px; height: 60px; background: linear-gradient(135deg, var(--terracotta) 0%, var(--terracotta-light) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white);">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--deep-brown);">Ethical Production</h3>
+                            <p style="color: var(--gray-600); line-height: 1.7;">We partner only with Fair Trade certified workshops that guarantee living wages, safe conditions, and workers' rights. Fashion should empower, not exploit.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 2rem; align-items: flex-start; padding: 2rem; background: var(--white); border-radius: var(--border-radius-lg); box-shadow: var(--shadow);">
+                        <div style="flex-shrink: 0; width: 60px; height: 60px; background: linear-gradient(135deg, var(--warm-beige) 0%, var(--cream-dark) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--deep-brown);">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--deep-brown);">Quality & Craftsmanship</h3>
+                            <p style="color: var(--gray-600); line-height: 1.7;">We create timeless pieces built to last. Premium materials, meticulous construction, and classic designs mean fewer purchases and less waste.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 2rem; align-items: flex-start; padding: 2rem; background: var(--white); border-radius: var(--border-radius-lg); box-shadow: var(--shadow);">
+                        <div style="flex-shrink: 0; width: 60px; height: 60px; background: linear-gradient(135deg, var(--sage-green) 0%, var(--sage-dark) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white);">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--deep-brown);">Transparency</h3>
+                            <p style="color: var(--gray-600); line-height: 1.7;">We believe in honest communication. From material sourcing to production methods, we're open about our practices and committed to continuous improvement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: var(--deep-brown); color: var(--cream); padding: 4rem 3rem; border-radius: var(--border-radius-lg); text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--cream);">Our Certifications</h2>
+                <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">We hold ourselves to the highest standards</p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+                    <div style="text-align: center;">
+                        <div style="width: 80px; height: 80px; margin: 0 auto 1rem; background: rgba(245, 241, 232, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem;">GOTS</div>
+                        <p style="font-size: 0.875rem;">Organic Textiles</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 80px; height: 80px; margin: 0 auto 1rem; background: rgba(245, 241, 232, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem;">GRS</div>
+                        <p style="font-size: 0.875rem;">Recycled Standard</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 80px; height: 80px; margin: 0 auto 1rem; background: rgba(245, 241, 232, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem;">FT</div>
+                        <p style="font-size: 0.875rem;">Fair Trade</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 80px; height: 80px; margin: 0 auto 1rem; background: rgba(245, 241, 232, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem;">B</div>
+                        <p style="font-size: 0.875rem;">B Corporation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--deep-brown);">Join Our Movement</h2>
+                <p style="font-size: 1.25rem; color: var(--gray-600); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">Every purchase supports ethical production, sustainable materials, and a better future for fashion. Together, we can make a difference.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+                    <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="8" width="24" height="24" stroke="currentColor" stroke-width="1.5" rx="2"/>
+                            <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        <span>LUXE MODAL</span>
+                    </a>
+                    <p>Premium sustainable fashion.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <a href="shop.html">All Products</a>
+                    <a href="shop.html?category=women">Women</a>
+                    <a href="shop.html?category=men">Men</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Journal</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="return-policy.html">Returns</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>591 Memorial Dr<br>Chicopee, MA 01020<br>United States</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LUXE MODAL. All rights reserved.</p>
+                <div class="footer-payment">
+                    <span>COD</span><span>Visa</span><span>Mastercard</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="searchModal">
+        <div class="modal-content modal-search">
+            <div class="modal-header"><h3>Search</h3><button class="modal-close" id="closeSearch">×</button></div>
+            <div class="modal-body"><input type="text" class="search-input" id="searchInput" placeholder="Search..."><div class="search-results" id="searchResults"></div></div>
+        </div>
+    </div>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content modal-cart">
+            <div class="modal-header"><h3>Cart (<span id="cartModalCount">0</span>)</h3><button class="modal-close" onclick="closeCartModal()">×</button></div>
+            <div class="modal-body">
+                <div id="cartEmptyState" class="empty-state"><h4>Cart is empty</h4><a href="shop.html" class="btn btn-primary">Shop Now</a></div>
+                <div id="cartModalContent" style="display:none;"><div id="cartModalItems"></div><div class="cart-modal-footer"><div class="cart-modal-total"><span>Total:</span><strong id="cartModalTotal">$0.00</strong></div><a href="cart.html" class="btn btn-primary btn-block">Checkout</a></div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="products-data.js"></script>
+    <script src="app.js"></script>
+
+    <style>
+        .page-header {
+            padding-top: 120px;
+            padding-bottom: 4rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+        }
+        @media (max-width: 768px) {
+            div[style*="display: flex"] {
+                flex-direction: column;
+            }
+        }
+    </style>
+</body>
+</html>
